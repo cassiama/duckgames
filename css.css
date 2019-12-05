@@ -60,7 +60,7 @@ header h1 {
     padding: 25px;
     border-radius: 25px;
 }
-a.game-link {
+a.game-link:link {
     color: white;
 }
 a.game-link:visited {
