@@ -1,0 +1,279 @@
+body {
+    background-color: #000000; 
+}
+header {
+    background-image: linear-gradient(rgba(119, 136, 153, 0.85), lightslategray, rgba(119, 136, 153, 0.85));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1 {
+    font-size: 25px;
+    color:black;
+    font-style: italic;
+}
+.logo {
+    margin: 5px;
+    height: 100px;
+    width: 50%;
+}
+#logo-link {
+    margin-left: 225px;
+}
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 150%;
+}
+.game {
+    flex-grow: 1;
+}
+.container {
+    max-width: 1300px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 15px;
+}
+.container p {
+    font-size: 75%;
+    color: black;
+    text-align: center;
+}
+.container h1 {
+    font-size: 250%;
+    margin-left: 600px;
+}
+#tictactoe-title {
+    margin-left: 550px;
+}
+#reaction-title {
+    margin-left: 525px;
+}
+.game-link {
+    background: red;
+    margin: 0px 100px 0px 100px;
+    padding: 25px;
+    border-radius: 25px;
+}
+a.game-link {
+    color: white;
+}
+a.game-link:visited {
+    color: white;
+}
+a.game-link:hover {
+    color: lightgray;
+}
+a.game-link:active {
+    color: lightgray;
+}
+.game-image {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+.game-description {
+    height: 125px;
+}
+.game-description p {
+    color: black;
+    font-size: 100%;
+}
+footer {
+    background-image: linear-gradient(rgba(119, 136, 153, 0.85), lightslategray, rgba(119, 136, 153, 0.85));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.footer-info h2 {
+    color: dimgray;
+}
+summary {
+    color: #FF0000;
+    font-weight: bold;
+}
+.gamewindow {
+    width: 500px; 
+    height: 500px; 
+    margin: auto; 
+    background-color: white;
+}
+#tictactoe-window {
+    height: 375px;
+}
+.overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.overview-body {
+    font-size: 150%;
+    height: auto;
+    color: black;
+    margin-left: 350px;
+}
+#tictactoe-body {
+    margin-left: 300px;
+}
+#reaction-body {
+    margin-left: 350px;
+}
+#changeme {
+    width: 500px; 
+    height: 500px; 
+    background-color: #FF0000;
+}
+.contacts{
+    float: left;
+    margin-right: 20px;
+}
+.contacts p {
+    color: white;
+}
+.contact-page-form p {
+    color: white
+}
+.message{
+    width: 50%;
+    height: 100px;
+}
+.submit{
+    display: inline-block
+}
+a {
+    text-decoration: none;
+}
+/* unvisited link */
+a:link {
+    color: dimgray;
+}  
+/* visited link */
+a:visited {
+    color: dimgray;
+} 
+/* mouse over link */
+a:hover {
+    color: lightgray;
+} 
+/* selected link */
+a:active {
+    color: lightgray;
+}
+
+/* desktop viewport */
+@media only screen and (min-width: 1300px) {
+    .container {
+        margin: 5px 5px 5px 80px;
+    }
+}
+
+/* tablet viewport */
+@media only screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+    #logo-link {
+        margin-left: 175px;
+    }
+    .games {
+        flex-direction: row;
+    }
+    .container {
+        flex-direction: column;
+        margin: 5px;
+    }
+    .container h1 {
+        margin-left: 0px;
+    }
+    #tictactoe-title {
+        margin-left: 0px;
+    }
+    #reaction-title {
+        margin-left: 0px;
+    }
+    .game-image {
+        width: 80%;
+        height: auto;
+        float: none;
+        margin: 0px 0px 10px 60px;
+    }
+    .game-link {
+        text-align: center;
+    }
+    .overview {
+        flex-direction: column;
+        margin: 5px;
+    }
+    .overview-body {
+        margin-left: 0px;
+    }
+    #tictactoe-body {
+        margin-left: 0px;
+    }
+    #reaction-body {
+        margin-left: 0px;
+    }
+    #input-email {
+        width: 50%;
+    }
+}
+
+/* phone viewport */
+@media only screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    #logo-link {
+        margin-left: 0px;
+    }
+    .games {
+        flex-basis: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+        margin: 5px;
+    }
+    .container h1 {
+        margin-left: 0px;
+    }
+    #tictactoe-title {
+        margin-left: 0px;
+    }
+    #reaction-title {
+        margin-left: 0px;
+    }
+    .game-image {
+        width: 80%;
+        height: auto;
+        margin: 5px 5px 5px 40px;
+    }
+    .game-link {
+        text-align: center;
+    }
+    .overview {
+        flex-direction: column;
+        margin: 5px;
+    }
+    .overview-body {
+        margin-left: 0px;
+    }
+    #tictactoe-body {
+        margin-left: 0px;
+    }
+    #reaction-body {
+        margin-left: 0px;
+    }
+    #input-email {
+        width: 50%;
+    }
+}

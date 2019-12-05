@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe!</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="tictactoeAssets/tictactoe.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="Images/duckgames-logo.svg" class="logo" id="logo-link" alt="DuckGames"></a>
+            <h1>Home of some Quacktastic games!</h1>
+        </header>
+        <div class="container">
+            <h1 id="tictactoe-title">Tic-Tac-Toe</h1>
+        </div>
+        <div class="gamewindow" id="tictactoe-window">
+            <center>
+                <form name=game>
+                    <table border=0>
+                        <td>
+                            <table border=1>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:yourChoice('A')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=A alt="Top-Left">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:yourChoice('B')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=B alt="Top-Center">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:yourChoice('C')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=C alt="Top-Right">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:yourChoice('D')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=D alt="Middle-Left">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:yourChoice('E')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=E alt="Middle-Center">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:yourChoice('F')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=F alt="Middle-Right">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:yourChoice('G')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=G alt="Bottom-Left">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:yourChoice('H')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=H alt="Bottom-Center">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:yourChoice('I')">
+                                            <img src="tictactoeAssets/blank.jpg" border=0 height=100 width=100 name=I alt="Bottom-Right">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type=text size=5 name=you>
+                                    </td>
+                                    <td>You</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type=text size=5 name=computer>
+                                    </td>
+                                    <td>Computer</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type=text size=5 name=ties>
+                                    </td>
+                                    <td>Ties</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </table>
+                    <input type=button value="Play Again" onClick="playAgain();"> &nbsp;&nbsp;
+                    <input type=button value="Game Help" onClick="help();"> &nbsp;&nbsp;
+                    <input type=button value="Quit Game" onClick="quitGame();">
+                </form>
+            </center>
+        </div>
+        <div class="container">
+            <div class="overview">
+                <div class="overview-body" id="tictactoe-body">
+                    <p>Tic-Tac-Toe is one of the most classic games of all time. Get 3 in a row before the computer does!</p>
+                    <p>Use the mouse to play this game.</p>
+                    <p>Originated in Ancient Egypt (unknown creator, obviously)</p>
+                    <p>Created during the time of the Ancient Egyptians</p>
+                    <p>All games seen on this page belong to their rightful owners.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

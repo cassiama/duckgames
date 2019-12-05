@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head><title>DuckGames</title></head>
+    <head>
+        <title>DuckGames</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
     <body>
-        <h1 style="text-align: center;">DuckGames</h1>
-        <div style="text-align: center; font-size: 200%; margin-right: 100px; height: 150px;">
-            <a href="snake.html"><img src="Images/snake_logo.png" style="float: left; width: 100px; height: 100px;">Snake</a>
-            <p style="font-size: 75%;">Snake: the classic browser game! Keep eating dots and make sure not to hit yourself!</p>
-        </div>
-        <br>
-        <div style="text-align: center; font-size: 200%; margin-right: 100px; height: 150px;">
-            <a href="minesweeper.html"><img src="Images/minesweeper_logo.png" style="float: left; width: 100px; height: 100px;">Minesweeper</a>
-            <p style="font-size: 75%;">One of the classic Windows pack-in games: Minesweeper. Make sure not to click on any mines!</p>
-        </div>
-        <br>
-        <div style="text-align: center; font-size: 200%; margin-right: 100px; height: 150px;">
-            <a href="2048.html"><img src="Images/2048_logo.svg.png" style="float: left; width: 100px; height: 100px;">2048</a>
-            <p style="font-size: 75%;">2048 is a modern, addictive puzzle game. Keep sliding blocks until you reach 2048!</p>
-        </div>
-        <br>
+        <header>
+            <img src="Images/duckgames-logo.svg" class="logo" alt="DuckGames">
+            <h1>Home of some Quacktastic games!</h1>
+        </header>
+        <div class="games">
+            <div class="game">
+                <div class="container">
+                    <a href="snake.html"><img src="Images/snake_logo.png" class="game-image" alt="Snake"></a>
+                    <a href="snake.html" class="game-link">Snake</a>
+                    <div class="game-description">
+                        <p>Snake: the classic browser game! Keep eating dots and make sure not to hit yourself!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="container">
+                    <a href="tic-tac-toe.html"><img src="Images/tic-tac-toe_logo.png" class="game-image" alt="Tic-Tac-Toe"></a>
+                    <a href="tic-tac-toe.html" class="game-link">Tic-Tac-Toe</a>
+                    <div class="game-description">
+                        <p>Tic-Tac-Toe is one of the most classic games of all time. Get 3 in a row before the computer does!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="container">
+                    <a href="reaction.html"><img src="Images/reaction-game_logo.png" class="game-image" alt="Reaction Game!"></a>
+                    <a href="reaction.html" class="game-link">Reaction Game!</a>
+                    <div class="game-description">
+                        <p>Reaction Game! is a minimalistic game that tests your reaction speed. Click in the red box and wait for the box to go green. Click as soon as you see it change!</p>
+                    </div>
+                </div>
+            </div>
+        </article>
     </body>
     <footer>
-        <h2>Creators and Credits</h2>
-        <details>
-            <summary style="font-size: 120%;">Snake</summary>
-            <p>&copy; Nokia/Taneli Armanto</p>
-            <p>Created in 1997</p>
-            <p>All games seen on this page belong to their rightful owners.</p>
-        </details>
-        <details>
-            <summary style="font-size: 120%;">Minesweeper</summary>
-            <p>&copy; Microsoft/Curt Johnson</p>
-            <p>Created in 1992</p>
-            <p>All games seen on this page belong to their rightful owners.</p>
-        </details>
-        <details>
-            <summary style="font-size: 120%;">2048</summary>
-            <p>&copy; Solebon/Gabriele Cirulli</p>
-            <p>Created in 2014</p>
-            <p>All games seen on this page belong to their rightful owners.</p>
-        </details>
-        <a href="contact-page.html"><h2>Contact Info</h2></a>
+        <div class="container">
+            <div class="footer-info">
+                <h2>Creators and Credits</h2>
+                <details>
+                    <summary>Snake</summary>
+                    <p>&copy; Nokia/Taneli Armanto</p>
+                    <p>Created in 1997</p>
+                    <p>All games seen on this page belong to their rightful owners.</p>
+                </details>
+                <details>
+                    <summary>Tic-Tac-Toe</summary>
+                    <p>Originated in Ancient Egypt (unknown creator, obviously)</p>
+                    <p>Created during the time of the Ancient Egyptians</p>
+                    <p>All games seen on this page belong to their rightful owners.</p>
+                </details>
+                <details>
+                    <summary>Reaction Game!</summary>
+                    <p>&copy; Farhan Shaik</p>
+                    <p>Created in 2019</p>
+                    <p>All games seen on this page belong to their rightful owners.</p>
+                </details>
+            </div>
+        </div>
+        <div class="container">
+            <div id="footer-info">
+                <a href="contact-page.html"><h2>Contact Info</h2></a>
+            </div>
+        </div>
     </footer>
 </html>

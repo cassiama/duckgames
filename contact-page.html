@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Contact Page</title></head>
+    <head>
+        <title>Contact Page</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+        <script src="contact-pageAssets/contact.js"></script>
+    </head>
     <body>
-        <h1 style="text-align: center;"><a href="index.html">DuckGames</a></h1>
-        <div style="float: left; margin-right: 20px;">
+        <header>
+            <a href="index.html"><img src="Images/duckgames-logo.svg" class="logo" id="logo-link" alt="DuckGames"></a>
+            <h1>Home of some Quacktastic games!</h1>
+        </header>
+        <div class="contacts">
             <div id="Chancelor">
                 <p><strong>Chancelor Assiamah</strong></p>
                 <p>Email: cassiama@stevens.edu</p>
@@ -26,12 +34,12 @@
             </div>
         </div>
         
-        <p>If you have any concerns about the website or any of the games on the website, please write a message below:</p>
-        <form>
-            <input class="message" type="text" name="message" style="width: 50%; height: 100px;"><br><br>
-            Input your email address:<br>
-            <input type="text" name="email" size="50"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="contact-page-form">
+            <p>If you have any concerns about the website or any of the games on the website, please write a message below:</p>
+            <input id="input-message" class="message" type="text" name="message"><br><br>
+            <p>Input your email address:</p><br>
+            <input id="input-email" type="text" name="email" size="50"><br><br>
+            <button class="submit" type="button" onclick="sendEmail()">Submit</button>
+        </div>
     </body>
 </html>
